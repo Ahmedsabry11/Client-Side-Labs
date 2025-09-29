@@ -1,0 +1,151 @@
+/* flex to wrap cards */
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* containter */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* card style */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* make header gradient or image fixed height */
+.card-header {
+    height: 150px;
+    /* any transition later */
+    transition: transform 0.6s ease; 
+}
+
+/* radial gradient  */
+.radial {
+    background: radial-gradient(circle, #8fd3f4, #34a853);
+}
+
+/* linear gradient with 135 degrees  */
+.linear {
+    background: linear-gradient(135deg, rgba(66, 133, 244, 1), rgba(66, 133, 244, 0.5));
+}
+
+/* background for image card */
+.image-bg {
+    background: url('google.png') no-repeat center/cover;
+}
+
+
+/* general button */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.6s;
+}
+
+/* hover effect for button */
+.btn:hover {
+    background: #1558b0;
+}
+
+/* button تفاصيل  */
+.btn2{
+    display: inline-block;
+    padding: 8px 16px;
+    color: #1a73e8;
+    background: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s;
+    border: 2px solid #1a73e8;
+    border-radius: 10px;
+}
+
+/* disappear */
+.card.linear-card:hover .btn2 {
+    background: #1558b0;
+    color:  #1558b0; ;
+}
+
+/*skew box */
+.card.linear-card:hover #skew {
+    transform: skew(6deg, 3deg);
+}
+
+/* color green */
+.card.linear-card:hover #linear {
+    color: #34a853;
+}
+
+
+/* color green */
+.card.radial-card:hover #linear {
+    color: #34a853;
+}
+
+/* scale + shadow*/
+.card.radial-card:hover {
+    transform: scale(0.96);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* rotate and translate on card hover */
+.card.image-card:hover .card-header {
+    transform: translateY(-10px) rotate(5deg)  ;
+}
+
+/* increase scale*/
+.card.image-card:hover #scale {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 16px;
+}
+
+/* for titles */
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0 16px;
+}
+
+.card-bottom {
+    border: 10px solid #34a853;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    /* background color with opacity 10% */
+    background: rgba(52, 168, 83, 0.1);
+
+}

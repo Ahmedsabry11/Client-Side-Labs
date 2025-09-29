@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js day three</title>
+  </head>
+  <body>
+    <h1>Day three</h1><h2>BOM</h2>
+    <!-- window, navigator, location, history, screen, dialogs, timers -->
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum delectus expedita impedit neque quas in amet molestiae rem eveniet? Incidunt, praesentium. Atque deleniti dolores, nostrum corporis molestias vero aperiam?</p>
+      <a href="#" >dsfdsfsd</a>
+    </div>
+    <button onclick="openWindow()">open new window</button>
+    <button onclick="closeWindow()">close new window</button>
+
+    <form action="test.html" method="get">
+        <input type="text" name="message" placeholder="Enter your message" />
+        <input type="text" name="title" id="" placeholder="title">
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, veritatis.</p>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <button onclick="sayHello()">Say Hello</button>
+    <button onclick="cancelHello()">Cancel Hello</button>
+
+    <button onclick="congratulateUser()">congratulations You won Iphone16 !!</button>
+    <button onclick="stopCongratulating()">Stop Congratulations</button>
+
+
+
+    <script>
+        var newWin;
+      function openWindow() {
+        newWin = window.open("newWindow.html", "", "width=500, height=500");
+      }
+      function closeWindow() {
+        newWin.close();
+      }
+      function showMessage() {
+        console.log("form timeout");
+      }
+
+      function congratulateUser(){
+        intervalId = setInterval(function() {
+          alert("Congratulations! You won an iPhone 16!");
+        }, 2000);
+      }
+
+      function stopCongratulating(){
+        clearInterval(intervalId);
+      }
+
+      var timeoutId;
+      function sayHello() {
+        timeoutId = setTimeout(showMessage, 3000);
+      }
+      function cancelHello() {
+        clearTimeout(timeoutId);
+      }
+    //   sayHello();
+      console.log("Before calling sayHello");
+
+
+    </script>
+  </body>
+</html>

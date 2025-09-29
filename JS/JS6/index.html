@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <div class="head">
+              Name
+              <button onclick="sort('name')"><span id="arrow1">⇅</span></button>
+            </div>
+          </th>
+          <th>
+            <div class="head">
+              Position
+              <button onclick="sort('position')">
+                <span id="arrow2">⇅</span>
+              </button>
+            </div>
+          </th>
+          <th>
+            <div class="head">
+              Office
+              <button onclick="sort('office')">
+                <span id="arrow3">⇅</span>
+              </button>
+            </div>
+          </th>
+          <th>
+            <div class="head">
+              Age
+              <button onclick="sort('age')"><span id="arrow4">⇅</span></button>
+            </div>
+          </th>
+          <th>
+            <div class="head">
+              Start Date
+              <button onclick="sort('startDate')">
+                <span id="arrow5">⇅</span>
+              </button>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
+
+    <br>
+    <br>
+    <h1>Stack</h1>
+    <div id = "stack">
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

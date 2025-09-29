@@ -1,0 +1,262 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.grid_container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40% 60%;
+    /* grid-template-rows: auto 1fr auto; */
+    grid-template-areas:
+        "profile_head profile_head"
+        "col1 col2"
+        "endline endline";
+
+}
+
+.profile_head{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-area: profile_head;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: orange;
+    margin-top: 1%;
+    /* margin: 1%; */
+}
+.img_container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.img_container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+
+}
+.info{
+    width: 55%;
+    color: white;
+}
+
+.info p {
+    margin-top: 20px;
+}
+/* --------------------------------------------------------------------------- */
+.col1{
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    padding-left: 20px;
+    margin-top: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.col2
+{
+    /* width: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contacts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contacts div {
+    width: 100%;
+}
+.contacts h1
+{
+    text-align: center;
+}
+.languages{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.languages h1
+{
+    text-align: center;
+}
+.skills{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.skills h1
+{
+    text-align: center;
+}
+.onlineinfo{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.onlineinfo h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.progress{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.progress1{
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    border-right-color: red;
+    border-bottom-color: red;
+    border-left-color: red;
+}
+.progress4{
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 10px solid blue;
+    border-radius: 50%;
+
+}
+.progress2{
+
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    border-bottom-color: red;
+    border-left-color: red;
+}
+.progress3{
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    border-right-color: red;
+    border-bottom-color: red;
+}
+
+
+.head{
+    background-color: orange;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+.text
+{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.endline
+{
+    width: 100%;
+    margin-top: 20px;
+    grid-area: endline;
+}
+
+.bar
+{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    margin-bottom: 20px;
+}
+.bar1
+{
+    width: 33%;
+    height: 100%;
+    background-color: red;
+}
+.bar2
+{
+    width: 33%;
+    height: 100%;
+    background-color: orange;
+}
+.bar3
+{
+    width: 34%;
+    height: 100%;
+    background-color: aqua;
+}
+
+
+.a1
+{
+    margin-top: 8px;
+    width: 100%;
+    height: 20px;
+    background-color: grey;
+    display: flex;
+    margin-bottom: 8px;
+}
+.a2
+{
+    width: 33%;
+    height: 100%;
+    background-color: red;
+}
+.b1
+{
+    margin-top: 8px;
+    width: 100%;
+    height: 20px;
+    background-color: grey;
+    display: flex;
+    margin-bottom: 8px;
+}
+.b2
+{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+}
+.c1
+{
+    margin-top: 8px;
+    width: 100%;
+    height: 20px;
+    background-color: grey;
+    display: flex;
+    margin-bottom: 8px;
+}
+.c2
+{
+    width: 90%;
+    height: 100%;
+    background-color: green;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- use rtl for direction from right to left -->
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab1</title>
+  <!-- styles script -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the cards -->
+  <div class="cards">
+    <!-- Card 1, image  -->
+    <div class="card image-card">
+      <div class="card-header image-bg"></div>
+      <div class="card-content">
+        <h3>كرت بصورة خلفية</h3>
+        <p>جرّب تمرر الماوس: الصورة تطلع لفوق شوية وتلف لفة بسيطة.</p>
+        <a href="#" class="btn" id ="scale">اقرأ المزيد</a>
+      </div>
+      <div class="card-bottom">عنصر داخلي بمحاذاة Flex</div>
+    </div>
+    
+    <!-- Card 2, linear -->
+    <div class="card linear-card">
+      <div class="card-header linear"></div>
+      <div class="card-content">
+        <h3 id = "linear">كرت بخلفية Linear Gradient</h3>
+        <p>الصندوق الأخضر هيعمل Skew على الهوفر. ركّز على الحدود العريضة.</p>
+        <a href="#" class="btn2">تفاصيل</a>
+      </div>
+      <div class="card-bottom" id="skew">skew(6deg, 3deg)</div>
+    </div>
+
+    <!-- Card 3, radial -->
+    <div class="card radial-card">
+      <div class="card-header radial"></div>
+      <div class="card-content">
+        <h3 id = "linear">Radial Gradient كرت بخلفية </h3>
+        <p>على الهوفر: الكرت كله بيصغر سنة والشادو يزيد (elevation).</p>
+        <a href="#" class="btn">تواصل</a>
+      </div>
+      <div class="card-bottom">Flex Center + Border</div>
+    </div>
+
+  </div>
+</body>
+</html>

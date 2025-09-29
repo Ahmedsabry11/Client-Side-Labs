@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+#list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.node {
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+}
